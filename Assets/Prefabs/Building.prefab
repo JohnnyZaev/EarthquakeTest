@@ -115,7 +115,7 @@ Rigidbody:
   m_GameObject: {fileID: 175521098610943751}
   serializedVersion: 4
   m_Mass: 15
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -129,8 +129,8 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!1 &1552580162456546838
@@ -142,6 +142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1991212625678321017}
+  - component: {fileID: 709072452936548329}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -169,6 +170,27 @@ Transform:
   - {fileID: 473111328169787140}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &709072452936548329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552580162456546838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07d99c763c085746ac1f230c66f8729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  willFall: 0
+  timeToFall: 20
+  _gameManager: {fileID: 0}
+  floorArray:
+  - {fileID: 6289339993032507771}
+  - {fileID: 9021428461121429750}
+  - {fileID: 3467908360367219349}
+  - {fileID: 2843518155986860748}
+  - {fileID: 473111328169787140}
 --- !u!1 &3900307013962081282
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,8 +305,8 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3900307013962081282}
   serializedVersion: 4
-  m_Mass: 15
-  m_Drag: 0
+  m_Mass: 50
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -298,7 +320,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
@@ -417,7 +439,7 @@ Rigidbody:
   m_GameObject: {fileID: 6225217433520401642}
   serializedVersion: 4
   m_Mass: 15
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -431,8 +453,8 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!1 &6366045669677589858
@@ -550,7 +572,7 @@ Rigidbody:
   m_GameObject: {fileID: 6366045669677589858}
   serializedVersion: 4
   m_Mass: 15
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -564,8 +586,8 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
 --- !u!1 &7012203872003835103
@@ -683,7 +705,7 @@ Rigidbody:
   m_GameObject: {fileID: 7012203872003835103}
   serializedVersion: 4
   m_Mass: 15
-  m_Drag: 0
+  m_Drag: 0.5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -697,7 +719,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2

@@ -22,4 +22,10 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         OnSimulationStopped.Invoke();
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+    }
 }
